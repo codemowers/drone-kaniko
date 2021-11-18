@@ -1,4 +1,4 @@
-#!/busybox/sh
+#!/bin/sh
 
 set -euo pipefail
 
@@ -99,6 +99,7 @@ fi
 /kaniko/executor -v ${LOG} \
     --context=${CONTEXT} \
     --dockerfile=${DOCKERFILE} \
+    --force \
     ${EXTRA_OPTS} \
     ${DESTINATIONS} \
     ${CACHE:-} \
