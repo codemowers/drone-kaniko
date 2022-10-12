@@ -100,6 +100,7 @@ fi
     --context=${CONTEXT} \
     --dockerfile=${DOCKERFILE} \
     --force \
+    --single-snapshot \
     ${EXTRA_OPTS} \
     ${DESTINATIONS} \
     ${CACHE:-} \
