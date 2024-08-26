@@ -101,6 +101,7 @@ fi
     --dockerfile=${DOCKERFILE} \
     --force \
     --single-snapshot \
+    --registry-mirror mirror.gcr.io \
     ${EXTRA_OPTS} \
     ${DESTINATIONS} \
     ${CACHE:-} \
